@@ -1,7 +1,7 @@
 # mutable - cannot change the value of variable 
 # immutable - cannot change the value of variable
 # str is  immutable
-
+x, y, z = "Orange", "Banana", "Cherry"
 a = 10
 b = 20
 
@@ -51,3 +51,9 @@ print(str5[:6])    #welcom
 print(str5[2:])    #lcome
 print(str5[1: -1]) #elcom
 print(str5[1: -2]) #elco
+
+a = """Lorem ipsum dolor sit amet,
+consectetur adipiscing elit,
+sed do eiusmod tempor incididunt
+ut labore et dolore magna aliqua."""
+print(a)
