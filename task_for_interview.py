@@ -15,3 +15,20 @@ def count_characters(string):
     return character_count
 
 print(count_characters('володимир')) 
+
+
+subscribers = [
+  {'name': 'Vova', 'age': 33},
+  {'name': 'Ira', 'age': 23},
+  {'name': 'Oleg', 'age': 43},
+  {'name': 'Olia', 'age': 31},
+  {'name': 'Julia', 'age': 29},
+]
+
+def helloSubscribers(lis):
+    if len(lis) >= 40:
+        print('Hello dear subscribers')
+    else:
+        print('No')
+
+helloSubscribers(subscribers)
