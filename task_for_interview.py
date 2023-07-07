@@ -16,7 +16,7 @@ def count_characters(string):
 
 print(count_characters('володимир')) 
 
-
+#subscriber function
 subscribers = [
   {'name': 'Vova', 'age': 33},
   {'name': 'Ira', 'age': 23},
@@ -32,3 +32,15 @@ def helloSubscribers(lis):
         print('No')
 
 helloSubscribers(subscribers)
+
+
+#square list number
+
+def squareList(some_list):
+    for item in some_list:
+        item *= item
+    return item
+
+my_list = [1, 2, 3, 4, 5, 6]
+
+print(squareList(my_list))
