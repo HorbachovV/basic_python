@@ -36,11 +36,10 @@ helloSubscribers(subscribers)
 
 #square list number
 
-def squareList(some_list):
-    for item in some_list:
-        item *= item
-    return item
+def square_arr(arr):
+    for i in range(len(arr)):
+        arr[i] *= arr[i]
+    return arr
 
-my_list = [1, 2, 3, 4, 5, 6]
-
-print(squareList(my_list))
+numbers = [1, 2, 3, 4, 5, 6]
+print(square_arr(numbers))
