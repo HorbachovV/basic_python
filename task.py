@@ -43,3 +43,42 @@ def square_arr(arr):
 
 numbers = [1, 2, 3, 4, 5, 6]
 print(square_arr(numbers))
+
+
+#add addjective
+friends = [
+  {
+    "name": 'Joe',
+    "gender": 'Male'
+  },
+  {
+    "name": 'Fibi',
+    "gender": 'Female'
+  },
+  {
+    "name": 'Ros',
+    "gender": 'Male'
+  },
+  {
+    "name": 'Monica',
+    "gender": 'Female'
+  },
+  {
+    "name": 'Rachel',
+    "gender": 'Female'
+  },
+  {
+    "name": 'Chandler',
+    "gender": 'Male'
+  },
+]
+
+def add_ajective(list):
+    for person in list:
+        if person['gender'] == 'Male':
+           person['name'] += ' is handsome'
+        else:
+           person['name'] += ' is beatiful'
+    return list
+
+print(add_ajective(friends))
