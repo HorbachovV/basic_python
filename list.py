@@ -91,3 +91,7 @@ for x in fruits:
     newlist.append(x)
 
 print(newlist)
+
+# List comprehension
+some_list = [x * 2 for x in range(10) ]
+print(some_list) #[0, 2, 4, 6, 8, 10, 12, 14, 16, 18]
