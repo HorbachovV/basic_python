@@ -82,3 +82,25 @@ def add_ajective(list):
     return list
 
 print(add_ajective(friends))
+
+
+# string check
+def str_check(string):
+    if string[::-1] == string:
+        return True
+    else:
+        return False
+    
+print(str_check('ABBA'))
+
+
+# list comprehension
+print([x for x in range(1, 10, 2)])
+
+
+# lambda sorted dict
+dct = {"a": 5, "b": 4, "c": 3, "d": 2, "e": 1}
+
+new_dict = sorted(dct.items(), key= lambda x: x[1])
+
+print(new_dict)
