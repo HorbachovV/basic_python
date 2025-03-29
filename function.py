@@ -45,3 +45,14 @@ def my_function(some_function):
   print('My function')
   my_another_function() 
 my_function(add_numbers(5, 5))
+
+# lambda functions
+x = lambda a, x : a + x
+print(x(5, 15))
+
+def myfunc(n):
+  return lambda a : a * n
+
+mydoubler = myfunc(2)
+
+print(mydoubler(11))
