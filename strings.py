@@ -51,3 +51,10 @@ str_4 = ' Hello, World! '.strip() #Hello, World!
 str_5 = 'Hello world'.split() #['Hello', 'world']
 
 print(str_5)
+
+s = 'spam'
+print(s in 'I saw spamalot!') #True
+print(s not in 'I saw The Holy Grail!') #True
+x = 'xxxxx'
+print(x in 'I saw The Holy Grail!') #False
+print(x not in 'I saw The Holy Grail!') #True

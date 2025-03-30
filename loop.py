@@ -29,3 +29,6 @@ for i in range(1, 10):
         continue
     print(i)
 print('End of programm')
+
+for char in "foo":
+    print(char)
