@@ -104,3 +104,25 @@ dct = {"a": 5, "b": 4, "c": 3, "d": 2, "e": 1}
 new_dict = sorted(dct.items(), key= lambda x: x[1])
 
 print(new_dict)
+
+
+def split_unique_and_duplicates(numbers):
+    unique = []
+    duplicates = set()  # Використовуємо set, щоб уникнути дублікатів у списку повторень
+    seen = set()
+
+    for num in numbers:
+        if num in seen:
+            duplicates.add(num)
+        else:
+            unique.append(num)
+            seen.add(num)
+
+    return unique, list(duplicates)
+
+# Приклад використання:
+numbers = [1, 2, 3, 2, 4, 5, 3, 6, 7, 5, 8, 9, 9]
+unique_list, duplicates_list = split_unique_and_duplicates(numbers)
+
+print("List without repeats:", unique_list)
+print("List with repeats:", sorted(duplicates_list))
