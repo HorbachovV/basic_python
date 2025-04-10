@@ -50,3 +50,12 @@ else:
 
 # is 	Returns True if both variables are the same object	x is y	
 # is not	Returns True if both variables are not the same object	x is not y
+
+
+age = 20
+status = "Adult" if age >= 18 else "Youth"
+print(status)  # Виведе: Дорослий
+
+
+result = 1 if True else 0
+print(result)  # Виведе: 1
