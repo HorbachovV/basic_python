@@ -126,3 +126,24 @@ unique_list, duplicates_list = split_unique_and_duplicates(numbers)
 
 print("List without repeats:", unique_list)
 print("List with repeats:", sorted(duplicates_list))
+
+# repeat number in list
+def repeat_number(arr):
+    new_arr = []
+    for num in arr:
+        for _ in range(num):
+            new_arr.append(num)
+    return new_arr
+
+print(repeat_number([1, 3, 2]))
+
+# sum of list elements
+numbers = [1, 2, 3, 4, 5]
+total = sum(numbers)
+print(total)
+
+numbers = [1, 2, 3, 4, 5]
+manual_sum = 0
+for number in numbers:
+    manual_sum += number
+print(manual_sum)
