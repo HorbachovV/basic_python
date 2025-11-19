@@ -142,7 +142,7 @@ numbers = [1, 2, 3, 4, 5]
 total = sum(numbers)
 print(total)
 
-numbers = [1, 2, 3, 4, 5]
+numbers = [1, 2, 3, 4, 5, 7]
 manual_sum = 0
 for number in numbers:
     manual_sum += number
